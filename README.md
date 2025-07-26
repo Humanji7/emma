@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Team
 
-- Frontend: [KsushaPolyacova]
+- Frontend/UX/UI: [KsushaPolyacova]
 
 - Backend: [AndrushaToporce]
 
