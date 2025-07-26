@@ -17,35 +17,24 @@ export const metadata: Metadata = {
   description: "AI-powered relationship coaching assistant",
 };
 
+// app/layout.tsx
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="app-container">
-          {/* Боковая панель */}
-          <aside className="sidebar">
-            <div className="user-profile">
-              {/* Аватар пользователя */}
-            </div>
-            <nav className="menu">
-              <button>Session</button>
-              <button>Menu</button>
-              <button>Settings</button>
-              <button>Account</button>
-            </nav>
-            <button className="logout">Log out</button>
-          </aside>
+      <body>
+        <div className="flex">
+          {/* Временно скрываем сайдбар */}
+          {/* <Sidebar /> */}
           
-          {/* Основной контент */}
-          <main className="main-content">
+          <main className="flex-1">
             {children}
           </main>
         </div>
       </body>
     </html>
-  );
+  )
 }
